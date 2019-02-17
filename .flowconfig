@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.ios.js
+module.file_ext=.android.js
+module.file_ext=.json
+
+[strict]
