@@ -4,8 +4,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "flow && eslint ."
   },
+  "pre-commit": [
+    "test"
+  ],
   "dependencies": {
     "expo": "^32.0.0",
     "react": "16.5.0",
@@ -25,13 +29,16 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-reactnative": "^1.0.2",
     "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
     "flow-bin": "0.62.0",
-    "flow-typed": "^2.5.1"
+    "flow-typed": "^2.5.1",
+    "pre-commit": "^1.2.2"
   },
-  "private": true
+  "private": true,
+  "name": "root"
 }

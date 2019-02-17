@@ -37,5 +37,9 @@ module.exports = {
           "camelcase": [0],
           "no-underscore-dangle": 0,
           "no-use-before-define": 0,
-    }
+          "global-require": 0,
+    },
+    "settings": {
+        "import/resolver": "reactnative"
+    },
 };
