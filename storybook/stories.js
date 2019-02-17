@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import type { Node } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from '@storybook/react-native';
 import { View, Text } from 'react-native';
@@ -11,7 +12,7 @@ const style = {
   backgroundColor: '#F5FCFF',
 };
 
-const CenteredView = ({ children }: any) => (
+const CenteredView = ({ children }: { children: Node }) => (
   <View style={style}>
     {children}
   </View>
