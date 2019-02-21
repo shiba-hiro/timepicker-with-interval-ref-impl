@@ -25,9 +25,11 @@ const CenteredView = ({ children }: { children: Node }) => (
 storiesOf('Stories', module)
   .add('TimePicker', () => {
     const isMinimumSet: boolean = boolean('isMinimumSetAs15:30?', false);
+    const isThirtyMinInterval: boolean = boolean('isThirtyMinInterval', true);
     return (
       <CenteredView>
         <TimePicker
+          minuteInterval={isThirtyMinInterval ? 30 : 1}
           minimumTime={isMinimumSet ? new Date('2019-01-01T15:30') : null}
         />
       </CenteredView>

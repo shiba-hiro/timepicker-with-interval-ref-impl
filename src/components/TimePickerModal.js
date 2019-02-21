@@ -17,7 +17,25 @@ import {
   calculateMinutesIndex,
 } from './timeIndexCalculator';
 
+const padZero = (data: number): string => {
+  const dataStringWithoutPad = String(data);
+  if (dataStringWithoutPad.length === 2) {
+    return dataStringWithoutPad;
+  }
+  return `0${dataStringWithoutPad}`;
+};
+
 const MIN_INTERVALS = {
+  '1': { // eslint-disable-line quote-props
+    values: Array
+      .from({ length: 60 })
+      .map((v, i) => ({
+        index: i,
+        data: i,
+        dataString: padZero(i),
+      })),
+    convertMinutesToIndex: (minutesData: ?number): number => (minutesData || 0),
+  },
   '30': { // eslint-disable-line quote-props
     values: [
       {
