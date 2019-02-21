@@ -3,13 +3,15 @@ import React from 'react';
 import type { Node } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from '@storybook/react-native';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+import TimePicker from '../src/components/TimePicker';
 
 const style = {
   flex: 1,
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#F5FCFF',
+  marginTop: '50%',
 };
 
 const CenteredView = ({ children }: { children: Node }) => (
@@ -18,9 +20,9 @@ const CenteredView = ({ children }: { children: Node }) => (
   </View>
 );
 
-storiesOf('CenteredView', module)
-  .add('default view', () => (
+storiesOf('Stories', module)
+  .add('TimePicker', () => (
     <CenteredView>
-      <Text>Hello Storybook</Text>
+      <TimePicker />
     </CenteredView>
   ));

@@ -8255,7 +8255,7 @@ moment-timezone@^0.5.23:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.22.2:
+"moment@>= 2.9.0", moment@^2.22.2, moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -9695,10 +9695,10 @@ react-native-picker-scrollview@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-native-picker-scrollview/-/react-native-picker-scrollview-1.0.0.tgz#6588c5f6b2e2f0e27933ad018615209b38894a72"
   integrity sha512-CZIfqdBGpQGsY/mEfP4EeVW/pdMK86IWIED09iPsoEvxk1e6S3Jv4ribfOKLFtaYBzrszWrpsdGkbv9cG9QxfA==
 
-react-native-popup-dialog@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/react-native-popup-dialog/-/react-native-popup-dialog-0.17.0.tgz#73e4d3b6f673a13cb933117e9eab00dca5d8e16b"
-  integrity sha512-6cMbxnELSdSFCkCg2IRPagcAg1oVJz7yqElyi4cmMqiz+SvpEPTyRIR1CnM27kMnHZgziVQntwt1V5Y0hd1AZA==
+react-native-popup-dialog@^0.16.4:
+  version "0.16.6"
+  resolved "https://registry.yarnpkg.com/react-native-popup-dialog/-/react-native-popup-dialog-0.16.6.tgz#7cbc40412191e06f8338877ca677bdde127ebd6c"
+  integrity sha512-GBwl57QQxpKZA6bdy04/KWUjDgixz0nP1HsLFpWTlYWXBORE0svcbbVGRvKRFV3W0c0zRvssV/TitwJmr9E6pQ==
   dependencies:
     babel-plugin-flow-react-proptypes "^9.1.1"
     prop-types "^15.6.0"
