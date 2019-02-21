@@ -4,6 +4,8 @@ import type { Node } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from '@storybook/react-native';
 import { View } from 'react-native';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { boolean } from '@storybook/addon-knobs';
 
 import TimePicker from '../src/components/TimePicker';
 
@@ -21,8 +23,13 @@ const CenteredView = ({ children }: { children: Node }) => (
 );
 
 storiesOf('Stories', module)
-  .add('TimePicker', () => (
-    <CenteredView>
-      <TimePicker />
-    </CenteredView>
-  ));
+  .add('TimePicker', () => {
+    const isMinimumSet: boolean = boolean('isMinimumSetAs15:30?', false);
+    return (
+      <CenteredView>
+        <TimePicker
+          minimumTime={isMinimumSet ? new Date('2019-01-01T15:30') : null}
+        />
+      </CenteredView>
+    );
+  });

@@ -1,7 +1,7 @@
 // @flow
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { getStorybookUI, configure } from '@storybook/react-native';
-
+import './config';
 import './rn-addons';
 
 // import stories
